@@ -5,13 +5,14 @@ public class MersennePrime {
         return false;
     }
 
-    public boolean isPrime(long p) {
+    public static boolean isPrime(long p) {
         for (long i = 2L; i <= Math.sqrt(p); i++) {
             if (p % i == 0) {
                 return false;
             }
         }
-        return p != 1L;
+        return p != 1L && p != 0L;
+    }
     }
 
 }
