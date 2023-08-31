@@ -2,7 +2,7 @@ package MersennePrimes;
 
 public class MersennePrime {
     public static boolean isMPrime(long n) {
-        return false;
+        return isPrime(n) && isPowOfTwo(n+1);
     }
 
     public static boolean isPrime(long p) {
@@ -25,7 +25,6 @@ public class MersennePrime {
             q = q >>> 1;
         }
         return bitCount <= 1;
-    }
     }
 
 }
