@@ -1,7 +1,7 @@
 package MersennePrimes;
 
 public class MersennePrime {
-    public static boolean isPrime(long n) {
+    public static boolean isMPrime(long n) {
         return false;
     }
 }
