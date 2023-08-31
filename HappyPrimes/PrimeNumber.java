@@ -3,6 +3,12 @@ package HappyPrimes;
 import java.util.ArrayList;
 
 public class PrimeNumber {
+
+    /**
+     * Determine whether or not a specified number is prime.
+     * @param p The number to check.
+     * @return True if the number is prime, false if not.
+     */
     public static boolean isPrime(int p) {
         for (long i = 2L; i <= Math.sqrt(p); i++) {
             if (p % i == 0) {
