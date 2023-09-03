@@ -25,8 +25,11 @@ public class PrimeNumber {
      * @throws IllegalArgumentException If the number is 0 or less it's an Illegal Argument.
      */
     public static int[] primeFactors(int p) throws IllegalArgumentException {
-        if (p <= 0)
-            throw new IllegalArgumentException("Numbers less than or equal to 0 are Illegal Arguments.");
+        if (p < 0)
+            throw new IllegalArgumentException("Numbers less than 0 are Illegal Arguments.");
+        if(p == 0){
+            throw new IllegalArgumentException("0 is neither prime nor composite");
+        }
         ArrayList<Integer> factors = new ArrayList<>();
         while (p % 2 == 0) {
             p *= 0.5;
